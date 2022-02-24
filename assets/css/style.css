@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(246, 220, 252);
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+}
+
+.navbar {
+    font-size: 35px;
+    padding-left: 20px;
+    color: rgb(102, 47, 107);
+}
+
+.content {
+    font-family: 'Roboto', serif;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*MY BOX*/
+
+.my-box {
+    background: white;
+    border-radius: 10px;
+    width: 77%;
+    padding: 10px;
+    margin: auto;
+}
+
+
+.my-box ul {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.my-box ul li {
+    list-style: none;
+    margin: 10px;
+    width: 50%;
+}
+
+.my-box ul li p {
+    text-transform: uppercase;
+    font-family: 'Roboto', serif;
+    font-size: 20px;
+    color: #FA58B6;
+    font-weight: bold;
+}
+
+.my-box ul li h3 {
+    color: rgb(102, 47, 107);
+    font-size: 25px;
+}
+
+/*MAIN*/
+
+main {
+    font-family: 'Roboto', serif;
+}
+
+/*ITEM (INPUT BUKU)*/
+
+.item {
+    width: 70%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid rgb(52, 0, 100);
+    border-radius: 10px;
+    width: 100%;
+}
+  
+.input_section > h2 {
+    text-align: center;
+    color: rgb(102, 47, 107);
+}
+  
+.input_section > form > .input {
+    margin: 8px 0;
+}
+  
+.input_section > form > button {
+    background-color: rgb(102, 47, 107);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+  
+.input_section > form > button > span {
+    font-weight: bold;
+}
+  
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+  
+.input_section > form > .input > label {
+    color: rgb(102, 47, 107);
+    font-weight: bold;
+}
+  
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+  
+.input_section > form > .input_inline > label {
+    color: rgb(102, 47, 107);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/*ITEM SEARCH*/
+
+.item-search {
+    width: 70%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+}
+
+.search_section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid rgb(52, 0, 100);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.form_search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.form_search > h2 {
+    color: rgb(102, 47, 107);
+}
+  
+.form_search > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+  
+.form_search > form > label {
+    display: flex;
+    align-items: center;
+    color: rgb(102, 47, 107);
+    font-weight: bold;
+}
+  
+.form_search > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+  
+.form_search > form > button {
+    background-color: rgb(102, 47, 107);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.search_section > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+  
+.search_section > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+/*INCOMPLETE*/
+
+.item-incomplete {
+    width: 70%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+}
+
+.item-incomplete .book_shelf h2 {
+    padding-left: 30px;
+}
+
+/*COMPLETE*/
+
+.item-complete {
+    width: 70%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+}
+
+.item-complete .book_shelf h2 {
+    padding-left: 30px;
+}
+
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid rgb(52, 0, 100);
+    border-radius: 10px;
+    width: 100%;
+}
+  
+.book_shelf > h2 {
+    color: rgb(102, 47, 107);
+}
+  
+.book_shelf > .book_list {
+    padding: 16px;
+}
+  
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 2px solid rgb(52, 0, 100);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+  
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+    color: white;
+}
+  
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+
+/*SEARCH*/
+.search_section > .book_list > .book_item > .action button {
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    float: right;
+    margin-top: -100px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.search_section > .book_list > .book_item > .action > .ungu {
+    background-color: rgb(174, 0, 255);
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .ungutua {
+    background-color: rgb(157, 31, 161);
+    color: white;
+    border: 2px solid #EA99D5;
+}
+
+.book_shelf > .book_list > .book_item > .action > .ungutua:hover {
+    background-color: rgb(223, 106, 238);
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .ungutua {
+    background-color: rgb(157, 31, 161);
+    color: white;
+    border: 2px solid #EA99D5;
+}
+
+.book_shelf > .book_list > .book_item > .action > .ungutua:hover {
+    background-color: rgb(223, 106, 238);
+    color: white;
+}
+  
+.book_shelf > .book_list > .book_item > .action > .ungutua {
+    background-color: rgb(157, 31, 161);
+    color: white;
+    border: 2px solid #EA99D5;
+}
+  
+.book_shelf > .book_list > .book_item > .action > .ungutua:hover {
+    background-color: rgb(223, 106, 238);
+    color: white;
+}
+
+.input_section {
+    background-color:  rgb(246, 220, 252);
+    color: rgb(102, 47, 107);
+}
+
+.search_section {
+    background-color: rgb(246, 220, 252);
+    color: rgb(102, 47, 107);
+}
+  
+.book_shelf {
+    background-color: rgb(246, 220, 252);
+    color: rgb(102, 47, 107);
+}
+
+.search_section #searchBookList .book_item {
+    background-color: rgb(174, 0, 255);
+    color: white;
+    box-shadow: 5px 5px 3px rgba(50, 1, 59, 0.4);
+}
+  
+.search_section #searchBookList .complete {
+    background-color: rgb(174, 0, 255);
+    color: white;
+    box-shadow: 5px 5px 3px rgba(50, 1, 59, 0.4);
+}
+  
+.book_shelf #incompleteBookshelfList .book_item {
+    background-color: #6b357c;
+    box-shadow: 5px 5px 3px rgba(50, 1, 59, 0.4);
+}
+  
+.book_shelf #completeBookshelfList .book_item {
+    background-color: #6b357c;
+    box-shadow: 5px 5px 3px rgba(50, 1, 59, 0.4);
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background-color: rgb(246, 220, 252);
+}
+footer p{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(102, 47, 107);
+    text-align: center;
+    font-weight: bold;
+}
